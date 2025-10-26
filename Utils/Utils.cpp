@@ -1,13 +1,13 @@
 #include "Utils.hpp"
 #include <filesystem>
 
-// Implementation of minimal filesystem utilities.
-
 namespace fs = std::filesystem;
 
 namespace Utils {
+    // Checks if a given file or directory path exists on the filesystem
+    // Uses std::filesystem::exists which works for both files and directories
+    // Handles both absolute and relative paths
     bool pathExists(const std::string& path) {
-        // std::filesystem::exists resolves both files and directories.
         return fs::exists(path);
     }
 }
