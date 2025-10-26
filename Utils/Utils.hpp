@@ -3,12 +3,12 @@
 
 #include <string>
 
-// Lightweight utility helpers used by the CLI.
-// Keep this header minimal; prefer declarations here and definitions in Utils.cpp.
-
+// Utils namespace - provides lightweight utility functions for the encryption tool
+// Currently includes filesystem path validation functionality
 namespace Utils {
-    // Returns true if the given file or directory exists on the filesystem.
-    // Accepts absolute or relative paths. No permission checks are performed.
+    // Checks if a given file or directory path exists on the filesystem
+    // Works with both absolute and relative paths, handles files and directories
+    // No permission checks are performed - only existence check
     bool pathExists(const std::string& path);
 }
 

@@ -6,4 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(FileEncryptionDecryptionTool
     main.cpp
     Utils/Utils.cpp
+    FileHandler/FileHandler.cpp
+    Encryption/Encryption.cpp
+    ArchiveHandler/ArchiveHandler.cpp
 )
